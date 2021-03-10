@@ -1,0 +1,6 @@
+$font-main: "Segoe UI";
+$font-main-route: "../../assets/fonts/Segoe UI.ttf";
+@font-face {
+  font-family: "Segoe_UI";
+  src: url($font-main-route) format("ttf");
+}
