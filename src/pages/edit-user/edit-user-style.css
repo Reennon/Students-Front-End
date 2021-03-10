@@ -28,4 +28,9 @@ input {
   margin-top: 12.5vh;
 }
 
-/*# sourceMappingURL=login-style.css.map */
+select {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/*# sourceMappingURL=edit-user-style.css.map */

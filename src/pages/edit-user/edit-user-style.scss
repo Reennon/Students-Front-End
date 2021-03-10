@@ -1,4 +1,4 @@
-@import "login-color-schema";
+@import "edit-user-color-schema";
 .login-title-holder{
   height: 50vh!important;
 }
@@ -21,4 +21,8 @@ input{
 }
 .login-holder{
   margin-top:12.5vh;
+}
+select{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }

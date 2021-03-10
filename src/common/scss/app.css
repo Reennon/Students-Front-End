@@ -6,6 +6,23 @@ html, body, .text-header {
   font-family: "Segoe UI";
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 /* normalized */
 html, body {
   padding: 0;
@@ -21,12 +38,6 @@ p {
 a, a:hover {
   text-decoration: none;
   color: #432E30;
-}
-
-hr {
-  padding: 1rem 0;
-  border: 0;
-  border-bottom: 1px solid #F8F8FA;
 }
 
 * {
@@ -317,7 +328,7 @@ table td:first-child {
   color: #a9a9a9;
   font-size: 1rem;
   font-weight: lighter;
-  margin-top: 2.4rem;
+  padding-top: 2.4rem;
   line-height: 1.2rem;
 }
 
@@ -329,6 +340,10 @@ table td:first-child {
 
 .fa-github:hover {
   color: #343434;
+}
+
+hr {
+  height: 1px;
 }
 
 /*# sourceMappingURL=app.css.map */

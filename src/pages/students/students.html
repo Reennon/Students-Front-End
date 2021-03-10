@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/scss/app.css">
-    <link rel="stylesheet" href="./login-style.css">
+    <link rel="stylesheet" href="students-style.css">
     <!--STYLES ENDS-->
 </head>
 <body>
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../students/students.html">Students</a>
+                        <a class="nav-link active" href="#">Students</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Marks</a>
@@ -47,7 +47,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../login/login.html">Login</a>
+                        <a class="nav-link" href="../login/login.html">Login</a>
                     </li>
 
                 </ul>
@@ -59,8 +59,8 @@
             <div class="row g-0 d-flex align-items-center login-title-holder X" id="f">
                 <div class="col-md-6 col-sm-12 ">
                     <div class="h-holder mtn">
-                        <h5>To View, Edit or Amend the DB</h5>
-                        <h1 class="logo-text">Login</h1>
+                        <h5>Check Details of Them</h5>
+                        <h1 class="logo-text">Students</h1>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 ">
@@ -68,51 +68,34 @@
                         <form>
                             <div class="form-group">
 <!--                                <label for="exampleInputEmail1">Email address</label>-->
-                                <small id="emailHelp" class="form-text text-muted">We'll keep your email safe</small>
-                                <label for="login-input-email"></label>
-                                <input type="email"
+                                <small id="emailHelp" class="form-text text-muted">Bring me up an ID of a student</small>
+                                <label for="exampleInputId"></label>
+                                <input type="number"
                                        class="form-control"
-                                       id="login-input-email"
+                                       id="exampleInputId"
                                        aria-describedby="emailHelp"
-                                       placeholder="Enter email">
+                                       placeholder="Enter Student Id">
 
                             </div>
-                            <div class="form-group">
-<!--                                <label for="exampleInputPassword1">Password</label>-->
-                                <small id="passwordHelp" class="form-text text-muted">
-                                    Your unique password goes right below
-                                </small>
-                                <label for="exampleInputPassword"></label>
-                                <input type="password"
-                                       class="form-control"
-                                       id="exampleInputPassword"
-                                       placeholder="Password">
-                            </div>
+
                             <div class="row align-items-center" >
-                                <div class="col ">
-
-                                    <div class="form-check form-switch">
-                                        <small id="rememberMeHelp" class="form-text text-muted">
-                                            Remember Me
-                                        </small>
-                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                                    </div>
-                                </div>
-                                <small id="rememberMeHel4p" class="form-text text-muted">
-                                    Does not have an account? Then, maybe you may might to
-                                    <a href="../register/register.html">Create One</a>
-                                </small>
                                 <div class="col-12 ">
-                                    <button type="submit" class="btn btn-dark float-end">Login</button>
+                                    <button type="submit" class="btn btn-dark float-end">Find</button>
                                 </div>
-
                             </div>
 
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container footer">
+            <table style="border-collapse:collapse">
+                <tr><th>StudentID</th><th>Group</th><th>FirstName</th><th>LastName</th><th>sum(mrk.Mark*(dpn.Credits*1.0))</th></tr>
+                <tr><td>1</td><td>KN-214</td><td>Kovalchuk</td><td>Roman</td><td>8190</td></tr>
+            </table>
         </div>
     </div>
     <div class="container-fluid ">

@@ -1,6 +1,6 @@
-@import "login-color-schema";
-.login-title-holder{
-  height: 50vh!important;
+@import "register-color-schema";
+.register-holder{
+  //height: 40vh!important;
 }
 .form-check{
   text-align: left;
@@ -19,6 +19,13 @@ input{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.login-holder{
-  margin-top:12.5vh;
+.register-holder{
+  margin-top:3.5vh;
+}
+button{
+  margin-top: 0.75rem;
+}
+select{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }

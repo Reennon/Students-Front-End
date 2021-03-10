@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Index</title>
+    <title>Stud.Base</title>
 
     <!--FONTS BEGINS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,120 +15,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
     <link rel="stylesheet" href="src/common/scss/app.css">
     <link rel="stylesheet" href="src/pages/landing/landing-style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--STYLES ENDS-->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
-        <div class="container">
-            <a class="navbar-brand logo-text" href="#">Stud.Base</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Marks</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Disciplines
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Student's Disciplines</a>
-                            <a class="dropdown-item" href="#">View Disciplines</a>
-                            <a class="dropdown-item" href="#">Add new discipline</a>
-                            <a class="dropdown-item" href="#">Update Disciplines</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+    <div class="container">
+        <a class="navbar-brand logo-text" href="#">Stud.Base</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="src/pages/students/students.html">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Marks</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Disciplines
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Student's Disciplines</a>
+                        <a class="dropdown-item" href="#">View Disciplines</a>
+                        <a class="dropdown-item" href="#">Add new discipline</a>
+                        <a class="dropdown-item" href="#">Update Disciplines</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="src/pages/login/login.html">Login</a>
+                </li>
 
-                </ul>
-            </div>
+            </ul>
         </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row g-0 d-flex align-items-center landing-title-holder">
-                <div class="col-md-6 col-sm-12">
-                    <div class="h-holder mtn">
-                        <h5>Best Student Management Service</h5>
-                        <h1 class="logo-text">Stud.Base</h1>
-                    </div>
+    </div>
+</nav>
+<div class="container-fluid mt-5 mb-md-0">
+    <div class="container">
+        <div class="row g-0 d-flex align-items-center landing-title-holder">
+            <div class="col-md-6 col-sm-12">
+                <div class="h-holder mtn">
+                    <h5>Best Student Management Service</h5>
+                    <h1 class="logo-text">Stud.Base</h1>
                 </div>
-                <div class="col-md-6 col-sm-12 ">
-                    <div class="rating">
+            </div>
+            <div class="col-md-6 col-sm-12 ">
+                <div class="rating">
 
-                        <table border="1" style="border-collapse:collapse">
-                            <tr>
-                                <th>FirstName</th>
-                                <th>LastName</th>
-                                <th>Rating</th>
-                            </tr>
-                            <tr>
-                                <td>Bowie</td>
-                                <td>David</td>
-                                <td>0.7</td>
-                            </tr>
-                            <tr>
-                                <td>Kovalchuk</td>
-                                <td>Roman</td>
-                                <td>0.01</td>
-                            </tr>
-                        </table>
-                    </div>
+                    <table style="border-collapse:collapse">
+                        <tr>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Rating</th>
+                        </tr>
+                        <tr>
+                            <td>Bowie</td>
+                            <td>David</td>
+                            <td>0.7</td>
+                        </tr>
+                        <tr>
+                            <td>Kovalchuk</td>
+                            <td>Roman</td>
+                            <td>0.01</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+</div>
+<div class="container-fluid">
 
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="section__title">Fast & Light</h3>
-                    <p>Start writing your notes immediately in any terminal! No more time wasted on navigating and
-                        opening
-                        your
-                        text editor.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="section__title">File Syncing</h3>
-                    <p>Save your file in Dropbox then you can access to it from anywhere.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="section__title">Secure</h3>
-                    <p>Encrypt your notes optionally. No one can get to your secrets! </p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="section__title">Configuration</h3>
-                    <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file.
-                        Never
-                        need to redo the setting every single time jotting down a note.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="section__title">Highlightings</h3>
-                    <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files
-                        fast.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="section__title">Keybindings</h3>
-                    <p>You can expect common keybindings for scribbler. Customize <span
-                            class="code code--inline">bindings.json</span> for your own liking! </p>
-                </div>
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="section__title">Fast & Responsive</h3>
+                <p>Start viewing your marks, rating, disciplines with ample comfort</p>
             </div>
-            <hr>
+            <div class="col-md-4">
+                <h3 class="section__title">Design</h3>
+                <p>Smart and Minimalistic design lets you complete your task more easily</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section__title">Secure</h3>
+                <p>Encrypt your data. No one can get to your marks! </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section__title">Roles</h3>
+                <p>Maintain all your base with <span class="code code--inline">Admin</span> role.
+                    Evaluate you students with <span class="code code--inline">Teacher</span> role.
+                    Gain Knowledge from your Teachers with <span class="code code--inline">Student</span> role.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section__title">Readability</h3>
+                <p>For better readability, Stud.Base has a clean, beautiful white-scheme allow you to work at ease!</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section__title">Maintainability</h3>
+                <p>You can expect full-time response from <span class="code code--inline">Flask Api</span>
+                    for the good </p>
+            </div>
         </div>
+        <hr>
     </div>
-    <div class="container-fluid bg-white-09">
+</div>
+<div class="container-fluid bg-white-09">
     <div class="container changelog">
         <h3 class="section__title">Changelog</h3>
         <div class="row">
@@ -180,34 +176,35 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="container-fluid ">
-        <div class="container footer">
-            <div class="row no-gutters">
-                <div class="col">
-                    <div class="logo" style=" text-align: left; !important;">
-                        <span class="logo-text">Stud.Bas</span>e
-                    </div>
-                </div>
-                <div class="col" style="text-align: right">
-                    <a href="https://github.com/Reennon/ArtifyUI" type="_blank"
-                       style="border:0; text-decoration:none; outline:none">
-                        <i class="fa fa-github" style=""></i>
-                    </a>
+</div>
+<div class="container-fluid ">
+    <div class="container footer">
+        <div class="row g-0">
+            <div class="col">
+                <div class="logo" style=" text-align: left; !important;">
+                    <span class="logo-text">Stud.Bas</span>e
                 </div>
             </div>
-            <div class="row no-gutters credentials">
-                2021 (c) Stud.Base<br>
-                All rights reserved
+            <div class="col" style="text-align: right">
+                <a href="https://github.com/Reennon/ArtifyUI" type="_blank"
+                   style="border:0; text-decoration:none; outline:none">
+                    <i class="fa fa-github" style=""></i>
+                </a>
             </div>
         </div>
+        <div class="row g-0 credentials">
+            2021 (c) Stud.Base<br>
+            Designed by Roman Kovalchuk<br>
+            All rights reserved
+        </div>
     </div>
+</div>
 
-    <!--SCRIPTS BEGINS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="src/common/js/main.js"></script>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--SCRIPTS ENDS-->
+<!--SCRIPTS BEGINS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="src/common/js/main.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--SCRIPTS ENDS-->
 </body>
 </html>
