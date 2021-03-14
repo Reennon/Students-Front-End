@@ -13,15 +13,15 @@
 
     <!--STYLES BEGINS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../common/scss/app.css">
-    <link rel="stylesheet" href="./register-style.css">
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../common/scss/app.css">
+    <link rel="stylesheet" href="register-style.css">
     <!--STYLES ENDS-->
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
     <div class="container">
-        <a class="navbar-brand logo-text" href="../../../index.html">Stud.Base</a>
+        <a class="navbar-brand logo-text" href="../../../../index.html">Stud.Base</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,22 @@
                         Students
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
-                        <a class="dropdown-item" href="../students/students.html">Student</a>
-                        <a class="dropdown-item" href="../students/new-student/new-student.html">Add New Student</a>
-                        <a class="dropdown-item" href="../students/update-student/update-student.html">Update Student Info</a>
+                        <a class="dropdown-item" href="../../students/students.html">Student</a>
+                        <a class="dropdown-item" href="../../students/new-student/new-student.html">Add New Student</a>
+                        <a class="dropdown-item" href="../../students/update-student/update-student.html">Update Student Info</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Marks</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMarksMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Marks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
+                        <a class="dropdown-item" href="../../marks/marks.html">Student Ratings</a>
+                        <a class="dropdown-item" href="../../marks/evaluate-discipline/evaluate-discipline.html">
+                            Evaluate Discipline
+                        </a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -55,10 +64,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../edit-user/edit-user.html">Edit User</a>
+                    <a class="nav-link" href="../../edit-user/edit-user.html">Edit User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../login/login.html">Login</a>
+                    <a class="nav-link active" href="../login.html">Login</a>
                 </li>
 
             </ul>
@@ -78,44 +87,47 @@
                     <div class="register-holder">
                         <form>
                             <div class="form-group">
-                                <small id="emailHelp" class="form-text text-muted">We'll keep your email safe</small>
-                                <label for="exampleInputEmail"></label>
+                                <small id="email-help" class="form-text text-muted">We'll keep your email safe</small>
+                                <label for="email"></label>
                                 <input type="email"
                                        class="form-control"
-                                       id="exampleInputEmail"
-                                       aria-describedby="emailHelp"
+                                       id="email"
+                                       aria-describedby="email-help"
                                        placeholder="Enter email">
 
                             </div>
                             <div class="form-group">
-                                <small id="passwordHelp" class="form-text text-muted">
+                                <small id="password-help" class="form-text text-muted">
                                     Your unique password goes right below (ought to be more than 8 symbols)
                                 </small>
-                                <label for="exampleInputPassword"></label>
+                                <label for="password"></label>
                                 <input type="password"
                                        class="form-control"
-                                       id="exampleInputPassword"
+                                       id="password"
+                                       aria-describedby="password-help"
                                        placeholder="Password"
                                        minlength="8">
                             </div>
                             <div class="form-group">
-                                <small id="passwordConfirmHelp" class="form-text text-muted">
+                                <small id="confirm-password-help" class="form-text text-muted">
                                     Please confirm the password, to ensure you haven't misspelled a cast
                                 </small>
-                                <label for="exampleInputConfirmPassword"></label>
+                                <label for="confirm-password"></label>
                                 <input type="password"
                                        class="form-control"
-                                       id="exampleInputConfirmPassword"
+                                       id="confirm-password"
+                                       aria-describedby="confirm-password-help"
                                        placeholder="The pass from above"
                                        minlength="8">
                             </div>
-                            <small id="roleSelectHelp" class="form-text text-muted">
+                            <small id="role-help" class="form-text text-muted">
                                 Please select the role, that suits you the most
                             </small>
                             <label for="role"></label>
                             <select name="role"
                                     id="role"
                                     class="form-select"
+                                    aria-describedby="role-help"
                                     aria-label="Default select example"
                                     required>
                                 <option value="">Role</option>
@@ -123,11 +135,7 @@
                                 <option value="2">Teacher</option>
                                 <option value="3">Admin</option>
                             </select>
-
                             <button type="submit" class="btn btn-dark float-end">Register</button>
-
-
-
                         </form>
                     </div>
                 </div>
@@ -159,9 +167,9 @@
 
     <!--SCRIPTS BEGINS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="../../common/js/main.js"></script>
-    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../../common/js/main.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--SCRIPTS ENDS-->
 </body>
 </html>
