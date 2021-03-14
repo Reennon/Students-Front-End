@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login | Stud.Base</title>
+    <title>Disciplines | Stud.Base</title>
 
     <!--FONTS BEGINS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/scss/app.css">
-    <link rel="stylesheet" href="./login-style.css">
+    <link rel="stylesheet" href="discipline-style.css">
     <!--STYLES ENDS-->
 </head>
 <body>
@@ -57,17 +57,15 @@
                         Disciplines
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Student's Disciplines</a>
-                        <a class="dropdown-item" href="#">View Disciplines</a>
-                        <a class="dropdown-item" href="#">Add new discipline</a>
+                        <a class="dropdown-item active" href="#">Add new discipline</a>
                         <a class="dropdown-item" href="#">Update Disciplines</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../edit-user/edit-user.html">Edit User</a>
+                    <a class="nav-link" href="#">Edit User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Login</a>
+                    <a class="nav-link" href="../login/login.html">Login</a>
                 </li>
 
             </ul>
@@ -79,54 +77,41 @@
             <div class="row g-0 d-flex align-items-center login-title-holder X" id="f">
                 <div class="col-md-6 col-sm-12 ">
                     <div class="h-holder mtn">
-                        <h5>To View, Edit or Amend the DB</h5>
-                        <h1 class="logo-text">Login</h1>
+                        <h5>Add a new one to our DB</h5>
+                        <h1 class="logo-text">Disciplines</h1>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 ">
-                    <div class="login-holder">
+                    <div class="discipline-holder">
                         <form>
                             <div class="form-group">
-                                <small id="email-help" class="form-text text-muted">We'll keep your email safe</small>
-                                <label for="email"></label>
+                                <small id="email-help" class="form-text text-muted">
+                                    Discipline name
+                                </small>
+                                <label for="exampleInputEmail"></label>
                                 <input type="email"
                                        class="form-control"
-                                       id="email"
-                                       aria-describedby="email-help"
-                                       placeholder="Enter email">
+                                       id="exampleInputEmail"
+                                       aria-describedby="emailHelp"
+                                       placeholder="Enter Name">
 
                             </div>
                             <div class="form-group">
-                                <small id="password-help" class="form-text text-muted">
-                                    Your unique password goes right below
+                                <small id="discipline-credits-help" class="form-text text-muted">
+                                    Discipline credits (from 0 to 5)
                                 </small>
-                                <label for="password"></label>
-                                <input type="password"
-                                       class="form-control"
-                                       id="password"
-                                       placeholder="Password">
+                                <label for="discipline-credits"></label>
+                                <input class="form-control"
+                                       type="number"
+                                       placeholder="Enter Credits"
+                                       aria-describedby="discipline-credits-help"
+                                       id="discipline-credits">
                             </div>
                             <div class="row align-items-center" >
-                                <div class="col ">
-
-                                    <div class="form-check form-switch">
-                                        <small id="remember-me-help" class="form-text text-muted">
-                                            Remember Me
-                                        </small>
-                                        <input class="form-check-input" type="checkbox" id="flex-switch-check-default">
-                                        <label class="form-check-label" for="flex-switch-check-default"></label>
-                                    </div>
-                                </div>
-                                <small id="rememberMeHel4p" class="form-text text-muted">
-                                    Does not have an account? Then, maybe you may might to
-                                    <a href="register/register.html">Create One</a>
-                                </small>
                                 <div class="col-12 ">
-                                    <button type="submit" class="btn btn-dark float-end">Login</button>
+                                    <button type="submit" class="btn btn-dark float-end">Submit</button>
                                 </div>
-
                             </div>
-
                         </form>
                     </div>
                 </div>

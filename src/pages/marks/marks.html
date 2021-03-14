@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login | Stud.Base</title>
+    <title>Register | Stud.Base</title>
 
     <!--FONTS BEGINS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/scss/app.css">
-    <link rel="stylesheet" href="./login-style.css">
+    <link rel="stylesheet" href="marks-style.css">
     <!--STYLES ENDS-->
 </head>
 <body>
@@ -40,13 +40,13 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMarksMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMarksMenuLink" role="button"
                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Marks
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
-                        <a class="dropdown-item" href="../marks/marks.html">Student Ratings</a>
-                        <a class="dropdown-item" href="../marks/evaluate-discipline/evaluate-discipline.html">
+                        <a class="dropdown-item active" href="#">Student Ratings</a>
+                        <a class="dropdown-item" href="./evaluate-discipline/evaluate-discipline.html">
                             Evaluate Discipline
                         </a>
                     </div>
@@ -67,7 +67,7 @@
                     <a class="nav-link" href="../edit-user/edit-user.html">Edit User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Login</a>
+                    <a class="nav-link" href="../login/login.html">Login</a>
                 </li>
 
             </ul>
@@ -79,55 +79,8 @@
             <div class="row g-0 d-flex align-items-center login-title-holder X" id="f">
                 <div class="col-md-6 col-sm-12 ">
                     <div class="h-holder mtn">
-                        <h5>To View, Edit or Amend the DB</h5>
-                        <h1 class="logo-text">Login</h1>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 ">
-                    <div class="login-holder">
-                        <form>
-                            <div class="form-group">
-                                <small id="email-help" class="form-text text-muted">We'll keep your email safe</small>
-                                <label for="email"></label>
-                                <input type="email"
-                                       class="form-control"
-                                       id="email"
-                                       aria-describedby="email-help"
-                                       placeholder="Enter email">
-
-                            </div>
-                            <div class="form-group">
-                                <small id="password-help" class="form-text text-muted">
-                                    Your unique password goes right below
-                                </small>
-                                <label for="password"></label>
-                                <input type="password"
-                                       class="form-control"
-                                       id="password"
-                                       placeholder="Password">
-                            </div>
-                            <div class="row align-items-center" >
-                                <div class="col ">
-
-                                    <div class="form-check form-switch">
-                                        <small id="remember-me-help" class="form-text text-muted">
-                                            Remember Me
-                                        </small>
-                                        <input class="form-check-input" type="checkbox" id="flex-switch-check-default">
-                                        <label class="form-check-label" for="flex-switch-check-default"></label>
-                                    </div>
-                                </div>
-                                <small id="rememberMeHel4p" class="form-text text-muted">
-                                    Does not have an account? Then, maybe you may might to
-                                    <a href="register/register.html">Create One</a>
-                                </small>
-                                <div class="col-12 ">
-                                    <button type="submit" class="btn btn-dark float-end">Login</button>
-                                </div>
-
-                            </div>
-
-                        </form>
+                        <h5>Created to Sort Students by their marks</h5>
+                        <h1 class="logo-text">Ratings</h1>
                     </div>
                 </div>
             </div>
@@ -135,27 +88,50 @@
     </div>
     <div class="container-fluid ">
         <div class="container footer">
-            <div class="row g-0">
-                <div class="col">
-                    <div class="logo" style=" text-align: left; !important;">
-                        <span class="logo-text">Stud.Bas</span>e
-                    </div>
-                </div>
-                <div class="col" style="text-align: right">
-                    <a href="https://github.com/Reennon/ArtifyUI" type="_blank"
-                       style="border:0; text-decoration:none; outline:none">
-                        <i class="fa fa-github" style=""></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row g-0 credentials">
-                2021 (c) Stud.Base<br>
-                Designed by Roman Kovalchuk<br>
-                All rights reserved
+            <div class="rating">
+
+                <table style="border-collapse:collapse">
+                    <tr>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td>Bowie</td>
+                        <td>David</td>
+                        <td>0.7</td>
+                    </tr>
+                    <tr>
+                        <td>Kovalchuk</td>
+                        <td>Roman</td>
+                        <td>0.01</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-
+    <div class="container-fluid ">
+    <div class="container footer">
+        <div class="row g-0">
+            <div class="col">
+                <div class="logo" style=" text-align: left; !important;">
+                    <span class="logo-text">Stud.Bas</span>e
+                </div>
+            </div>
+            <div class="col" style="text-align: right">
+                <a href="https://github.com/Reennon/ArtifyUI" type="_blank"
+                   style="border:0; text-decoration:none; outline:none">
+                    <i class="fa fa-github" style=""></i>
+                </a>
+            </div>
+        </div>
+        <div class="row g-0 credentials">
+            2021 (c) Stud.Base<br>
+            Designed by Roman Kovalchuk<br>
+            All rights reserved
+        </div>
+    </div>
+</div>
     <!--SCRIPTS BEGINS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="../../common/js/main.js"></script>

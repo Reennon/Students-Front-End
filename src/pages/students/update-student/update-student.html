@@ -39,8 +39,17 @@
                         <a class="dropdown-item active" href="#">Update Student Info</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Marks</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMarksMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Marks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
+                        <a class="dropdown-item" href="../../marks/marks.html">Student Ratings</a>
+                        <a class="dropdown-item" href="../../marks/evaluate-discipline/evaluate-discipline.html">
+                            Evaluate Discipline
+                        </a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -144,7 +153,7 @@
     </div>
     <div class="container-fluid ">
         <div class="container footer">
-            <table border="1" style="border-collapse:collapse">
+            <table style="border-collapse:collapse">
                 <tr><th>StudentID</th><th>Group</th><th>FirstName</th><th>LastName</th><th>sum(mrk.Mark*(dpn.Credits*1.0))</th></tr>
                 <tr><td>1</td><td>KN-214</td><td>Kovalchuk</td><td>Roman</td><td>8190</td></tr>
             </table>

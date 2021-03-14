@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Register | Stud.Base</title>
+
+    <!--FONTS BEGINS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <!--FONTS ENDS-->
+
+    <!--STYLES BEGINS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../common/scss/app.css">
+    <link rel="stylesheet" href="evaluate-discipline-style.css">
+    <!--STYLES ENDS-->
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+    <div class="container">
+        <a class="navbar-brand logo-text" href="../../../../index.html">Stud.Base</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudentMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
+                        <a class="dropdown-item" href="../../students/students.html">Student</a>
+                        <a class="dropdown-item" href="../../students/new-student/new-student.html">Add New Student</a>
+                        <a class="dropdown-item" href="../../students/update-student/update-student.html">Update Student Info</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMarksMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Marks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentMenuLink">
+                        <a class="dropdown-item" href="../marks.html">Student Ratings</a>
+                        <a class="dropdown-item active" href="#">
+                            Evaluate Discipline
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Disciplines
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Student's Disciplines</a>
+                        <a class="dropdown-item" href="#">View Disciplines</a>
+                        <a class="dropdown-item" href="#">Add new discipline</a>
+                        <a class="dropdown-item" href="#">Update Disciplines</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../edit-user/edit-user.html">Edit User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../login/login.html">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="container-fluid mt-5 mb-md-0">
+        <div class="container">
+            <div class="row g-0 d-flex align-items-center login-title-holder X" id="f">
+                <div class="col-md-6 col-sm-12 ">
+                    <div class="h-holder mtn">
+                        <h5>Of the Student that had one</h5>
+                        <h1 class="logo-text">Evaluate Discipline</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <div class="evaluate-discipline-holder">
+                    <form>
+                        <div class="form-group">
+                            <small id="marks-id-help" class="form-text text-muted">
+                                MarksID Will Tell us which Student's Rating Table to amend
+                            </small>
+                            <label for="marks-id"></label>
+                            <input type="number"
+                                   class="form-control"
+                                   id="marks-id"
+                                   aria-describedby="marks-id-help"
+                                   placeholder="Enter MarksID">
+
+                        </div>
+                        <div class="form-group">
+                            <small id="discipline-id-help" class="form-text text-muted">
+                                DisciplineID is capable to determine which discipline you are about to evaluate
+                            </small>
+                            <label for="discipline-id"></label>
+                            <input type="number"
+                                   class="form-control"
+                                   id="discipline-id"
+                                   placeholder="Enter DisciplineID"
+                                   aria-describedby="discipline-id-help">
+                        </div>
+                        <div class="form-group">
+                            <small id="mark-help" class="form-text text-muted">
+                                Mark should be between 0 and 100
+                            </small>
+                            <label for="mark"></label>
+                            <input type="number"
+                                   class="form-control"
+                                   id="mark"
+                                   placeholder="Enter Mark">
+                        </div>
+                    </form>
+                </div>
+                    <div class="col ">
+                        <div class="form-check form-switch">
+                            <small id="remember-me-help" class="form-text text-muted">
+                                Has The Student Passed the Discipline?
+                            </small>
+                            <input class="form-check-input" type="checkbox" id="flex-switch-check-default">
+                            <label class="form-check-label" for="flex-switch-check-default"></label>
+                        </div>
+                        <button type="submit" class="btn btn-dark float-end">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container footer">
+            <div class="rating">
+
+                <table style="border-collapse:collapse">
+                    <tr><th>id</th><th>DisciplineName</th><th>Mark</th><th>Passed</th><th>Credits</th></tr>
+                    <tr><td>3</td><td>English</td><td>70</td><td>1</td><td>3</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+    <div class="container footer">
+        <div class="row g-0">
+            <div class="col">
+                <div class="logo" style=" text-align: left; !important;">
+                    <span class="logo-text">Stud.Bas</span>e
+                </div>
+            </div>
+            <div class="col" style="text-align: right">
+                <a href="https://github.com/Reennon/ArtifyUI" type="_blank"
+                   style="border:0; text-decoration:none; outline:none">
+                    <i class="fa fa-github" style=""></i>
+                </a>
+            </div>
+        </div>
+        <div class="row g-0 credentials">
+            2021 (c) Stud.Base<br>
+            Designed by Roman Kovalchuk<br>
+            All rights reserved
+        </div>
+    </div>
+</div>
+    <!--SCRIPTS BEGINS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="../../../common/js/main.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--SCRIPTS ENDS-->
+</body>
+</html>
