@@ -2,3 +2,6 @@
 /.idea/
 /.idea/*
 /*.log
+node_modules/
+/node_modules/
+
