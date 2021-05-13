@@ -1,0 +1,11 @@
+{
+  "name": "Students.Frontend",
+  "version": "1.0.0",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "jquery": "^3.6.0"
+  }
+}

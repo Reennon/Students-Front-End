@@ -68,7 +68,7 @@
                     <a class="nav-link" href="../edit-user/edit-user.html">Edit User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../login/login.html">Login</a>
+                    <a class="nav-link" href="../login/login.html"id='login-menu-text'>Login</a>
                 </li>
 
             </ul>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12 ">
                     <div class="login-holder">
-                        <form>
+                        <form id="student-form">
                             <div class="form-group">
 <!--                                <label for="exampleInputEmail1">Email address</label>-->
                                 <small id="emailHelp" class="form-text text-muted">Bring me up an ID of a student</small>
@@ -98,14 +98,13 @@
                                        placeholder="Enter Student Id">
 
                             </div>
-
                             <div class="row align-items-center" >
                                 <div class="col-12 ">
                                     <button type="submit" class="btn btn-dark float-end">Find</button>
                                 </div>
                             </div>
-
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -113,9 +112,7 @@
     </div>
     <div class="container-fluid ">
         <div class="container footer">
-            <table style="border-collapse:collapse">
-                <tr><th>StudentID</th><th>Group</th><th>FirstName</th><th>LastName</th><th>sum(mrk.Mark*(dpn.Credits*1.0))</th></tr>
-                <tr><td>1</td><td>KN-214</td><td>Kovalchuk</td><td>Roman</td><td>8190</td></tr>
+            <table style="border-collapse:collapse" id="excelDataTable">
             </table>
         </div>
     </div>
@@ -147,6 +144,7 @@
     <script src="../../common/js/main.js"></script>
     <script src="../../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./student.js"></script>
     <!--SCRIPTS ENDS-->
 </body>
 </html>

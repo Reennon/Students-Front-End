@@ -67,7 +67,7 @@
                     <a class="nav-link" href="../../edit-user/edit-user.html">Edit User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../login/login.html">Login</a>
+                    <a class="nav-link" href="../../login/login.html"id='login-menu-text'>Login</a>
                 </li>
 
             </ul>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12 ">
                     <div class="login-holder">
-                        <form>
+                        <form id="new-student-form">
                             <div class="form-group">
                                 <small id="new-student-group-help"
                                        class="form-text text-muted">Enter Student's Group
@@ -134,9 +134,7 @@
     </div>
     <div class="container-fluid ">
         <div class="container footer">
-            <table style="border-collapse:collapse">
-                <tr><th>StudentID</th><th>Group</th><th>FirstName</th><th>LastName</th><th>sum(mrk.Mark*(dpn.Credits*1.0))</th></tr>
-                <tr><td>1</td><td>KN-214</td><td>Kovalchuk</td><td>Roman</td><td>8190</td></tr>
+            <table style="border-collapse:collapse" id="excelDataTable">
             </table>
         </div>
     </div>
@@ -166,6 +164,7 @@
     <!--SCRIPTS BEGINS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="../../../common/js/main.js"></script>
+    <script src="../update-student/updateStudent.js"></script>
     <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--SCRIPTS ENDS-->
